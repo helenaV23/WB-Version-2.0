@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'BWGradual';
+    src: url('fonts/BwGradual-Regular.woff');
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 25px 0px 25px;
+}
+
+.push-apart {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    display: inline-block;
+    margin: 3px 60px 2px 0px;
+}
+
+nav li:last-child {
+    margin-right: 0px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav a {
+    font-family: 'BWGradual';
+    line-height: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a::after {
+    content: "";
+    display: block;
+	width: 0;
+    border-radius: 10px;
+	height: 2px;
+	background-color: #FF8500;
+	transition: width 0.3s ease-out;
+}
+
+nav a:hover:after {
+	width: 100%;
+}
