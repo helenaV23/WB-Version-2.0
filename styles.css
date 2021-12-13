@@ -1,18 +1,20 @@
 @font-face {
-    font-family: 'BWGradual';
-    src: url('fonts/BwGradual-Regular.woff');
+    font-family: "BWGradual";
+    src: url("fonts/BwGradual-Regular.woff");
 }
 
 body {
-    margin: 0px; /* TODO: 0px? */
-    padding: 0px; /* TODO: does body anywhere have paddings? */ /* TODO: 0px? */
+    margin: 0; /* TODO: 0px? */ /* TODO: does body anywhere have paddings? */ /* TODO: 0px? */
     font-size: 16px;
 }
 
 .container {
     max-width: 1400px;
-    margin: auto;
-    padding: 25px 0px 25px; /* TODO: do you want container to have vertical paddings everywhere? */ /* TODO: 0px? */
+    margin: auto;  /* TODO: do you want container to have vertical paddings everywhere? */ /* TODO: 0px? */
+}
+
+header {
+    padding: 25px 0 25px;
 }
 
 .push-apart {
@@ -22,20 +24,20 @@ body {
 
 nav li {
     display: inline-block;
-    margin: 3px 60px 2px 0px; /* TODO: 0px? */
+    margin: 3px 60px 2px 0; /* TODO: 0px? */
 }
 
 nav li:last-child {
-    margin-right: 0px; /* TODO: 0px? */
+    margin-right: 0; /* TODO: 0px? */
 }
 
 ul {
-    margin: 0px; /* TODO: 0px? */
-    padding: 0px; /* TODO: 0px? */
+    margin: 0; /* TODO: 0px? */
+    padding: 0; /* TODO: 0px? */
 }
 
 nav a {
-    font-family: 'BWGradual';
+    font-family: "BWGradual";
     line-height: 25px;
     text-decoration: none;
     color: black;
@@ -45,12 +47,12 @@ nav a::after {
     content: ""; /* TODO: define which quotes you are using - double or single - and use them everywhere in the doc */
     display: block;
 	width: 0;
-    border-radius: 10px; /* TODO: why 10px? */
+    border-radius: 1px; /* TODO: why 10px? */
 	height: 2px;
 	background-color: #FF8500;
-	transition: width 0.3s ease-out; /* TODO: since there is nothing to transit except width - you can omit this value */
+	transition: 0.3s ease-out; /* TODO: since there is nothing to transit except width - you can omit this value */
 }
 
-nav a:hover:after { /* TODO: pseudo elements should use double colon */
+nav a:hover::after { /* TODO: pseudo elements should use double colon */
 	width: 100%;
 }
