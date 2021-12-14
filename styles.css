@@ -4,13 +4,13 @@
 }
 
 body {
-    margin: 0; /* TODO: 0px? */ /* TODO: does body anywhere have paddings? */ /* TODO: 0px? */
+    margin: 0;
     font-size: 16px;
 }
 
 .container {
     max-width: 1400px;
-    margin: auto;  /* TODO: do you want container to have vertical paddings everywhere? */ /* TODO: 0px? */
+    margin: auto;
 }
 
 header {
@@ -24,16 +24,16 @@ header {
 
 nav li {
     display: inline-block;
-    margin: 3px 60px 2px 0; /* TODO: 0px? */
+    margin: 3px 60px 2px 0;
 }
 
 nav li:last-child {
-    margin-right: 0; /* TODO: 0px? */
+    margin-right: 0;
 }
 
 ul {
-    margin: 0; /* TODO: 0px? */
-    padding: 0; /* TODO: 0px? */
+    margin: 0;
+    padding: 0;
 }
 
 nav a {
@@ -44,15 +44,15 @@ nav a {
 }
 
 nav a::after {
-    content: ""; /* TODO: define which quotes you are using - double or single - and use them everywhere in the doc */
+    content: "";
     display: block;
 	width: 0;
-    border-radius: 1px; /* TODO: why 10px? */
+    border-radius: 1px;
 	height: 2px;
 	background-color: #FF8500;
-	transition: 0.3s ease-out; /* TODO: since there is nothing to transit except width - you can omit this value */
+	transition: 0.3s ease-out;
 }
 
-nav a:hover::after { /* TODO: pseudo elements should use double colon */
+nav a:hover::after {
 	width: 100%;
 }
